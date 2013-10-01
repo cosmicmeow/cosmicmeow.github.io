@@ -2516,7 +2516,7 @@ form fieldset legend { padding: 5px 10px; }
 .tab-nav > li > a:hover { text-decoration: none; background: whitesmoke; }
 .tab-nav > li > a:active { background: #ededed; }
 
-.tab-nav > li.active > a { height: 43px; line-height: 41px; }
+.tab-nav > li.active > a { height: 43px; line-height: 41px; border-right: 10px solid #71CAC9; }
 
 .tabs.pill .tab-nav { width: 100%; /* remove if you dont want the tabs to span the full container width */ display: table; overflow: hidden; }
 .tabs.pill .tab-nav > li { display: table-cell; margin: 0; margin-left: -4px; text-align: center; top: 0; }

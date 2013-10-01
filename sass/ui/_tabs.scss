@@ -89,6 +89,7 @@
 
 .tab-nav > li.active > a {
   @include line-and-height($tab-height + 1);
+  border-right:10px solid #71CAC9;
   //background: $white;
 }
 
