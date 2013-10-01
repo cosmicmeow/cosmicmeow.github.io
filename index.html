@@ -1,5 +1,4 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
@@ -84,6 +83,10 @@
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
 
+  <!-- FRESCO STUFF -->
+  <script type="text/javascript" src="fresco/js/fresco/fresco.js"></script>
+  <link rel="stylesheet" type="text/css" href="fresco/css/fresco/fresco.css"/>
+
 	<!-- Change UA-XXXXX-X to be your site's ID -->
 	<!--<script>
 	window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
@@ -108,9 +111,10 @@
           <img src="img/banner.png">
           <ul class="tab-nav">
             <li class="active"><a href="#">Web</a></li>
+            <li><a href="#">Print</a></li>
             <li><a href="#">Illustration</a></li>
             <li><a href="#">About</a></li>
-          </ul>
+          </ul><br>
           <a href="http://twitter.com/cosmic_meow"><img src="img/twitter_c.png"></a>
 
         </div>
@@ -121,124 +125,64 @@
         <!-- Web -->
         <div class="tab-content active">
           <div class="row">
-            <div class="six columns" style="border:1px #000 solid;background-color:#fff">
+            <div class="six columns" style="border:1px #9E9786 solid;background-color:#fff">
               <center>
                 <a href="http://vinylmint.com"><img src="img/vinylmint_thumb.png"></a><br>
-                Internship at Vinylmint
+                Intern<br>Vinylmint
               </center>
             </div>
 
-            <div class="six columns" style="border:1px #000 solid;background-color:#fff">
+            <div class="six columns" style="border:1px #9E9786 solid;background-color:#fff">
               <center>
                 <a href="http://cs.odu.edu/~acm"><img src="img/oduacm_thumb.png"></a><br>
-                Web Developer at Old Dominion University - ACM
+                Web Developer<br>Old Dominion University ACM
               </center>
             </div>
           </div>
         </div>
 
+        <!-- Print -->
+        <div class="tab-content">
+
+          <div class="row">
+            <div class="six columns">
+              <a href="img/hrtbusposter.png" class="fresco" data-fresco-group="prints"><img src="img/hrtbusposter_thumb.png"></a>
+           </div>
+           <div class="six columns">
+             <a href="img/ndochposter.png" class="fresco" data-fresco-group="prints"><img src="img/ndochposter_thumb.png"></a>
+            </div>
+          </div> <!-- /.row -->
+
+          <div class="row">
+            <div class="six columns">
+              <a href="img/acmposter.png" class="fresco" data-fresco-group="prints"><img src="img/acmposter_thumb.png"></a>
+           </div>
+
+           <div class="six columns">
+             <a href="img/oducfaposter.png" class="fresco" data-fresco-group="prints"><img src="img/oducfaposter_thumb.png"></a>
+            </div>
+          </div> <!-- /.row -->
+
+        </div>
+
         <!-- Illustration -->
         <div class="tab-content">
           <div class="row">
-            <div class="six columns" style="border:1px #000 solid;background-color:#fff">
-              <center>
-                <div class="modal" id="modal1">
-                  <div class="content">
-                    <a class="close switch" gumby-trigger="|#modal1"><i class="icon-cancel" /></i></a>
-                    <div class="row">
-                      <div class="ten columns centered text-center">
-                        <img src="img/hrtbusposter.png">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <a href="#" class="switch" gumby-trigger="#modal1"><img src="img/hrtbusposter_thumb.png"></a>
-              </center>
+            <div class="six columns">
+              <a href="img/letsparty.png" class="fresco" data-fresco-group="illustration"><img src="img/letsparty_thumb.png"></a>
+           </div>
+           <div class="six columns">
+             <a href="http://757rb.org"><img src="img/757rb_thumb.png"></a>
             </div>
-
-            <div class="six columns" style="border:1px #000 solid;background-color:#fff">
-              <center>
-                <div class="modal" id="modal2">
-                  <div class="content">
-                    <a class="close switch" gumby-trigger="|#modal2"><i class="icon-cancel" /></i></a>
-                    <div class="row">
-                      <div class="ten columns centered text-center">
-                        <img src="img/acmposter.png">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <a href="#" class="switch" gumby-trigger="#modal2"><img src="img/acmposter_thumb.png"></a>
-              </center>
-            </div>
-          </div> <!-- ./row -->
-
-          <div class="row">
-            <div class="six columns" style="border:1px #000 solid;background-color:#fff">
-              <center>
-                <div class="modal" id="modal3">
-                  <div class="content">
-                    <a class="close switch" gumby-trigger="|#modal3"><i class="icon-cancel" /></i></a>
-                    <div class="row">
-                      <div class="ten columns centered text-center">
-                        <img src="img/oducfaposter.png">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <a href="#" class="switch" gumby-trigger="#modal3"><img src="img/oducfaposter_thumb.png"></a>
-              </center>
-            </div>
-
-            <div class="six columns" style="border:1px #000 solid;background-color:#fff">
-              <center>
-                <div class="modal" id="modal4">
-                  <div class="content">
-                    <a class="close switch" gumby-trigger="|#modal4"><i class="icon-cancel" /></i></a>
-                    <div class="row">
-                      <div class="ten columns centered text-center">
-                        <img src="img/ndochposter.png">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <a href="#" class="switch" gumby-trigger="#modal4"><img src="img/ndochposter_thumb.png"></a>
-              </center>
-            </div>
-          </div>
-
-          <div class="row"> 
-            <div class="six columns" style="border:1px #000 solid;background-color:#fff">
-              <center>
-                <div class="modal" id="modal5">
-                  <div class="content">
-                    <a class="close switch" gumby-trigger="|#modal5"><i class="icon-cancel" /></i></a>
-                    <div class="row">
-                      <div class="ten columns centered text-center">
-                        <img src="img/letsparty.png">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <a href="#" class="switch" gumby-trigger="#modal5"><img src="img/letsparty_thumb.png"></a>
-              </center>
-            </div>
-
-            <div class="six columns" style="border:1px #000 solid;background-color:#fff">
-              <center>
-                <a href="http://757rb.org"><img src="img/757rb_thumb.png"></a>
-              </center>
-            </div>
-          </div>
-
+          </div> <!-- /.row -->
         </div>
 
         <!-- About -->
         <div class="tab-content">
           <img src="img/meee.png"><br>
           <p>Lookmai Rattana is a Computer Science undergraduate student at Old Dominion University. She interests front-end development, 3-D Modeling, and pixel illustration (<a href="http://hexraystudios.com/hexels/">Hexel</a> is the BEST!!). She is currently interning at Vinylmint and web developing for Association for Computer Machinery over at ODU. <br><br>
-          You can shoot her an email at <u>oratt001@gmail.com</u>. <br>
-          Or follow her on Twitter <a href="http://twitter.com/cosmic_meow">@cosmic_meow</a>.
+          You can shoot her an email at <u>oratt001@gmail.com</u>. <br><br>
+          <a href="http://twitter.com/cosmic_meow"><img src="img/twitter_c.png"></a> <a href="http://www.linkedin.com/pub/onapha-rattana/66/659/233"><img src="img/linkedin.png"></a> <a href="http://cosmicmeoww.tumblr.com/"><img src="img/tumblr.png"></a>
           </p>
         </div>
 
