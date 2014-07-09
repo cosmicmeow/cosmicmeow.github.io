@@ -1,4 +1,0 @@
-Name: shoot
-Email: shoot@shit.com
-Comment: foo
-

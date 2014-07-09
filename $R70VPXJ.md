@@ -1,4 +1,0 @@
-cosmicmeow.github.io
-====================
-
-website
