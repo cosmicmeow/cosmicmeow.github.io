@@ -1,0 +1,114 @@
+body, html, .contents{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+
+.header, .footer {
+	height:50px;
+	width:100%;
+	position:absolute;
+	left:0;
+	text-align:center;
+	margin:auto;
+	background-color:#48C37D;
+	color:#fff;
+}
+
+.header{
+	top:0;
+	z-index:99;
+}
+
+.header h1{
+	font-size:26px;
+	margin-top:10px;
+}
+
+.contents{
+	padding-top: 50px;
+	padding-bottom: 35px;
+	overflow:scroll;
+}
+
+.contents .row:first{
+	border-top:1px solid #efefef;
+	border-bottom:0;
+}
+
+.contents .row{
+	transition:background-color 0.3s ease-out;
+	height:100px;
+	border-bottom:1px solid #efefef;
+}
+
+.contents .row:hover{
+	cursor:pointer;
+	background-color: #E9E8E4;
+}
+
+.contents .row > .row-content{
+	padding:15px 0;
+	height:100%;
+}
+
+.contents .image{
+	padding:0;
+}
+
+.contents .image > img{
+	width:70px;
+	height:70px;
+	border-radius:50%;
+}
+
+.contents .info{
+	padding:0 10px;
+}
+
+.contents .name{
+	font-size: 28px;
+	line-height: 42px;
+}
+
+.contents .service{
+	font-size:16px;
+}
+
+.contents .price{
+	font-size:40px;
+	padding:0;
+	line-height: 70px;
+}
+
+.circle{
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-color: rgb(70, 164, 231);
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color:#fff;
+	text-align: center;
+	padding-top:5px;
+}
+
+.footer{
+	bottom:0;
+}
+
+.footer .row{
+	margin-top:12px;
+}
+
+.footer span{
+	transition:color 0.2s ease-out;
+	font-size:24px;
+}
+
+.footer span:hover{
+	cursor:pointer;
+	color:#E9E8E4;
+}
