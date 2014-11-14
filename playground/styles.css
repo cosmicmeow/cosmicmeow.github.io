@@ -85,7 +85,7 @@ body, html, .contents{
 	font-size:16px;
 }
 
-.contents .price{
+.feed .price{
 	float:right;
 	font-size:40px;
 	padding:0;
@@ -181,6 +181,99 @@ body, html, .contents{
 
 .tabs .col-xs-6.active:hover{
 	background-color:#E9E8E4;
+}
+
+
+.contents.item_detail{
+	overflow:scroll;
+	height: 100%;
+	padding-top:0;
+}
+
+.item_detail h2{
+	font-size:24px;
+	margin:0;
+}
+
+.item_detail h3{
+	font-size:18px;
+	margin:0;
+	font-weight: normal;
+}
+
+.item_detail .price{
+	position:absolute;
+	bottom:15px;
+	right:15px;
+	background-color:#4CD964;
+	color:#fff;
+	width:70px;
+	height:70px;
+	border-radius: 50%;
+	font-size: 30px;
+	padding:0;
+	line-height: 70px;
+	text-align: center;
+}
+
+.item_detail .rate{
+	position:absolute;
+	bottom:15px;
+	left:15px;
+	color:#FCD75B;
+	font-size: 20px;
+}
+
+.item_detail .item_info{
+	background-color:#48C37D;
+	height:150px;
+	color:#fff;
+	padding: 15px;
+	position:relative;
+}
+
+.item_detail .item_images{
+	height: 150px;
+	background-color: #efefef;
+	width: auto;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.item_detail .item_image{
+	width:auto;
+	display:inline-block;
+}
+
+.item_detail img{
+	height: 150px;
+	padding:10px 0 10px 15px;
+}
+
+.item_detail .item_description{
+	padding-top:15px;
+	padding-bottom: 15px;
+}
+
+.item_detail .review{
+	height: 50px;
+	line-height: 50px;
+	border-top: 1px solid #efefef;
+	border-bottom: 1px solid #efefef;
+	font-size: 20px;
+}
+
+.item_detail .btn{
+	width:100%;
+	background-color: rgb(70, 164, 231);
+	color: #fff;
+	height: 50px;
+	margin: 10px 0;
+	font-size: 20px;
+	line-height: 50px;
+	padding: 0;
 }
 
 .footer{
