@@ -20,6 +20,14 @@ body, html, .contents{
 	z-index:99;
 }
 
+.header span{
+	float:left;
+	font-size:26px;
+	padding:10px 10px 0 10px;
+	color: rgb(44, 147, 219);
+	cursor:pointer;
+}
+
 .header h1{
 	font-size:26px;
 	margin-top:10px;
@@ -28,12 +36,10 @@ body, html, .contents{
 .contents{
 	padding-top: 50px;
 	padding-bottom: 50px;
-	overflow:scroll;
 }
 
-.contents .row:first{
-	border-top:1px solid #efefef;
-	border-bottom:0;
+.contents.feed{
+	overflow:scroll;
 }
 
 .contents .row{
@@ -98,6 +104,83 @@ body, html, .contents{
 	color:#fff;
 	text-align: center;
 	padding-top:5px;
+}
+
+.contents .services{
+	overflow: scroll;
+	height: calc(100% - 200px);
+}
+
+.contents .services > .row{
+	transition:background-color 0.3s ease-out;
+	height:50px;
+	border-bottom:1px solid #efefef;
+	margin:0;
+	width:100%;
+	padding: 15px;
+}
+
+.contents .services > .row:hover{
+	cursor:pointer;
+	background-color: #E9E8E4;
+}
+
+.contents .services > .row > .row-content{
+	padding:15px 0;
+	height:100%;
+}
+
+.user_detail .image{
+	height:100%;
+	padding-right:10px;
+}
+
+.user_detail .image > img{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+}
+
+.user_detail .summary{
+	font-size:14px;
+}
+
+
+.bio{
+	height: 150px;
+	width: 100%;
+	background-color: #efefef;
+	padding:15px;
+}
+
+.tabs{
+	height:50px;
+	width: 100%;
+	background-color: #fff;
+}
+
+.tabs .col-xs-6{
+	transition: color 0.3s ease-out;
+	transition: background-color 0.3s ease-out;
+	height:100%;
+	background-color:#fff;
+	color: rgb(70, 164, 231);
+	font-size:20px;
+	line-height: 50px;
+	text-align: center;
+}
+
+.tabs .col-xs-6:hover{
+	cursor:pointer;
+	background-color:#E9E8E4;
+}
+
+.tabs .col-xs-6.active{
+	background-color:#efefef;
+}
+
+.tabs .col-xs-6.active:hover{
+	background-color:#E9E8E4;
 }
 
 .footer{
