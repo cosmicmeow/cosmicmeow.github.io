@@ -1,0 +1,57 @@
+/** HTML5 Reset http://host.sonspring.com/formalize/assets/stylesheets/html.css **/
+a,abbr,address,article,aside,audio,b,blockquote,body,caption,cite,code,dd,del,dfn,dialog,div,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{border:0; margin:0; padding:0; font-size:100%} /** why not border:none **/
+article,aside,figure,figcaption,footer,header,hgroup,nav,section,main{display:block}
+
+
+html{overflow-y:scroll} /** prevent firefox scrollbar jump. firefox hides vertical scrollbar if content < visibile window by default **/
+
+html,body{height:100%}
+
+
+  a:link {color:#6EC150;} 
+  a:visited {color:#6EC150;}  
+  a:hover {color:#dda1a1;}  
+  a:active {color:#dda1a1;} 
+
+.content
+{
+  width:100%;
+  height:100%;
+  margin:0em auto;
+  max-width:100%;
+  max-height:100%;
+  text-align:center; background-color:#fff; -moz-box-shadow:0 0 4px #000; -ms-box-shadow:0 0 4px #000; -o-box-shadow:0 0 4px #000; -webkit-box-shadow:0 0 4px #000; box-shadow:0 0 4px #000
+}
+
+body {
+text-align:center; 
+color: #000;
+font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-weight: 300;
+line-height: 1.625;
+}
+
+header{background-color:#000; height:10%; }
+
+h2 {
+   text-align:center;
+   padding:10px;
+}
+
+main{background-color:#FFF; height:90%; position:relative; width:100%}
+
+.nav
+{
+   position:absolute;
+   left:5%;
+}
+
+img {
+max-width:100%;
+max-height:100%;}
+
+.maincontent{width:100%}
+
+nav ul{}
+
+footer{background-color:#000; height:150px; width:100%;}

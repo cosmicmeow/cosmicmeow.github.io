@@ -1,0 +1,173 @@
+
+
+body {
+  margin: 0;
+  font-family: 'OpenSansRegular';
+  font-size: 20px;
+  line-height: 20px;
+  color: #333333;
+  background:url('http://dev.orattana.com/pagetap/img/subtlenet2.png') repeat;
+}  
+	
+#wrapper {
+}
+	
+h1, h2, h3, h4, h5, h6 {
+  font-size: 50px;
+  color:#ffa68e;
+  font-family: 'OpenSansBold', Helvetica, sans-serif;
+}
+	
+p {
+
+}
+	
+a {
+  font-family: 'OpenSansRegular';
+  color: #ffa68e;
+  text-decoration: none;
+}
+	
+a:hover, a:focus, a:active {
+	color: #ffa68e;
+}
+	
+a:focus, a:active {
+  color: #ffa68e;
+}
+	
+img, a img {
+}
+	
+small {
+}
+	
+abbr, acronym {
+}
+	
+blockquote {
+}
+	
+cite {
+}
+	
+em {
+}
+	
+strong {
+}
+	
+form {
+}
+	
+fieldset {
+}
+	
+legend {
+}
+	
+label {
+}
+	
+input {
+}
+	
+select {
+}
+	
+option {
+}
+	
+textarea {
+}
+	
+input:focus, select:focus, option:focus, textarea:focus {
+}
+	
+#header {
+	background-color:#fff;
+	width:810px;
+	margin-left:auto;
+	margin-right: auto;
+	-moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+}
+	
+#content {
+	background-color:#fff;
+	width:710px;
+	padding:50px 50px 50px 50px;
+	margin-left:auto;
+	margin-right: auto;
+	-moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+}
+	
+#sidebar {
+}
+	
+#navigation {
+}
+	
+#footer {
+
+  display: block;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+	
+.bold {
+}
+	
+.italic {
+}
+	
+.hidden {
+}
+
+.offset {
+}
+	
+.highlight {
+}
+	
+.tiny {
+}
+	
+.error {
+}
+
+.abbr {
+}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('font/OpenSans-Regular-webfont.eot');
+    src: url('font/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/OpenSans-Regular-webfont.woff') format('woff'),
+         url('font/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('font/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'OpenSansExtrabold';
+    src: url('font/OpenSans-ExtraBold-webfont.eot');
+    src: url('font/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/OpenSans-ExtraBold-webfont.woff') format('woff'),
+         url('font/OpenSans-ExtraBold-webfont.ttf') format('truetype'),
+         url('font/OpenSans-ExtraBold-webfont.svg#OpenSansExtrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+audio { 
+	width: 450px; 
+	display: block;
+}
