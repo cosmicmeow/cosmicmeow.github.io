@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+        <style>
+            #center {
+                text-align: center;
+                border: 1px solid #000000;
+                width: 680px;
+                height: 400px;
+            }
+        </style>
+
+<head>
+
+<title>Weather Blur Test Stub </title>
+<link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+<script src="http://vjs.zencdn.net/c/video.js"></script>
+</head>
+
+
+
+<div id="center">
+<body>
+
+
+<style type="text/css">
+#browsername {
+	color: #fff;
+	padding: 10px;
+	text-transform: capitalize;
+}
+.firefox #browsername, .chrome #browsername {
+	background: #f00;
+}
+.chrome #browsername {
+	background: #357;
+}
+.msie #browsername {
+	background: #00f;
+}
+.safari #browsername {
+	background: #0f0;
+}
+.opera #browsername {
+	background: #000;
+}
+.iphone #browsername {
+	background: #ccc;
+	color: #000;
+}
+</style>
+<div id="browsername">
+	<script>document.write($.browser.name + ' browser ' + $.browser.versionX + 'x' + '.');</script>
+	<script>document.write($.layout.name + ' layout engine ' + $.layout.version + '.');</script>
+</div>
+<br>
+
+<video id="my_video_1" class="video-js vjs-default-skin" controls
+  preload="auto" width="640" height="264" 
+  data-setup="{}">
+  <source src="test.MOV" type='video/mp4'>
+  <source src="test.MOV" type='video/MOV'>
+</video>
+
+<br>
+
+</body>
+<div/>
+</html>
