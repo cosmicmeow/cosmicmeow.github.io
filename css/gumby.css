@@ -1,5 +1,4 @@
-@charset "IBM437";
-@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@charset "UTF-8";
 /**
 * Gumby Framework
 * ---------------
@@ -17,6 +16,7 @@
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
 */
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
 html { line-height: 1; }
@@ -2324,9 +2324,9 @@ img { -ms-interpolation-mode: bicubic; }
 .btn.success, .skiplink.success { background: #58c026; border: 1px solid #58c026; }
 .btn.success:hover, .skiplink.success:hover { background: #72d940; }
 .btn.success:active, .skiplink.success:active { background: #44951e; }
-.btn.metro, .metro .btn, .metro .skiplink, .btn.metro:hover, .skiplink.metro:hover, .btn.metro:active, .skiplink.metro:active, .skiplink.metro { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
+.btn.metro, .metro .btn, .metro .skiplink, .btn.metro:hover, .metro .btn:hover, .metro .skiplink:hover, .skiplink.metro:hover, .btn.metro:active, .metro .btn:active, .metro .skiplink:active, .skiplink.metro:active, .skiplink.metro { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
 .btn.metro.rounded, .metro .rounded.btn, .metro .rounded.skiplink, .rounded.skiplink.metro:hover, .rounded.skiplink.metro:active, .skiplink.metro.rounded { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
-.btn.pretty, .pretty .btn, .pretty .skiplink, .btn.pretty:hover, .skiplink.pretty:hover, .btn.pretty:active, .skiplink.pretty:active, .skiplink.pretty { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
+.btn.pretty, .pretty .btn, .pretty .skiplink, .btn.pretty:hover, .pretty .btn:hover, .pretty .skiplink:hover, .skiplink.pretty:hover, .btn.pretty:active, .pretty .btn:active, .pretty .skiplink:active, .skiplink.pretty:active, .skiplink.pretty { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
 .btn.pretty.squared, .pretty .squared.btn, .pretty .squared.skiplink, .squared.skiplink.pretty:hover, .squared.skiplink.pretty:active, .skiplink.pretty.squared { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
 
 .btn.pretty.primary, .pretty .primary.btn, .pretty .primary.skiplink, .primary.skiplink.pretty:hover, .primary.skiplink.pretty:active, .skiplink.pretty.primary { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #85b7e7), color-stop(100%, #2a85dc)); background-image: -webkit-linear-gradient(#85b7e7, #2a85dc); background-image: -moz-linear-gradient(#85b7e7, #2a85dc); background-image: -o-linear-gradient(#85b7e7, #2a85dc); background-image: linear-gradient(#85b7e7, #2a85dc); -webkit-box-shadow: inset 0 0 3px #f0f6fc; -moz-box-shadow: inset 0 0 3px #f0f6fc; box-shadow: inset 0 0 3px #f0f6fc; border: 1px solid #1f5e9b; }
@@ -2545,7 +2545,7 @@ body .video.twitch, body .video.youtube.show_controls { padding-top: 30px; }
 
 .video > video, .video > iframe, .video > object, .video > embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
-.drawer { position: relative; width: 100%; max-height: 0; background: #3e4144; -webkit-box-shadow: inset 0 -2px 5px #313436, inset 0 2px 5px #313436; -moz-box-shadow: inset 0 -2px 5px #313436, inset 0 2px 5px #313436; box-shadow: inset 0 -2px 5px #313436, inset 0 2px 5px #313436; overflow: hidden; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -o-transition-duration: 0.3s; transition-duration: 0.3s; }
+.drawer { position: relative; width: 100%; max-height: 0; background: #dddddd; -webkit-box-shadow: inset 0 0px 0px #313436, inset 0 0px 0px #313436; -moz-box-shadow: inset 0 0px 0px #313436, inset 0 0px 0px #313436; box-shadow: inset 0 0px 0px #313436, inset 0 0px 0px #313436; overflow: hidden; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -o-transition-duration: 0.3s; transition-duration: 0.3s; }
 .drawer.active { height: auto; max-height: 800px; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; }
 
 .modal { width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: -999999; background: black; background: rgba(0, 0, 0, 0.8); }
@@ -2589,6 +2589,12 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 .ie9 .radio.checked i, .ie9 .checkbox.checked i { top: 0; }
 
 .navigation { font-family: "ClarksSummit"; font-size: 25px; }
+
+.six:hover, .six:focus, .six:active { background-color: #b7ebea; }
+
+.grey { font-size: 12px; color: #9E9886; }
+
+.drawer_p { margin: 10px; font-size: 14px; }
 
 /*!
  *  Font Awesome 3.2.1

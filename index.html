@@ -39,6 +39,7 @@
 	<!-- <link rel="stylesheet" href="css/style.css"> -->
 
 	<script src="js/libs/modernizr-2.6.2.min.js"></script>
+
 </head>
 
 <body>
@@ -48,9 +49,9 @@
 	<script>
 	var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
 	if(!oldieCheck) {
-	document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
+	document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
 	} else {
-	document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
+	document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
 	}
 	</script>
 	<script>
@@ -62,6 +63,7 @@
 	}
 	}
 	</script>
+
 
 	<!--
 	Include gumby.js followed by UI modules followed by gumby.init.js
@@ -102,7 +104,7 @@
 	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
 	<![endif]-->
 
-  
+
   <div class="row">
     <section class="tabs">
 
@@ -110,12 +112,13 @@
         <div class="navigation">
           <img src="img/banner.png">
           <ul class="tab-nav">
-            <li class="active"><a href="#">Web</a></li>
+            <li><a href="#">Web</a></li>
             <li><a href="#">Print</a></li>
             <li><a href="#">Illustration</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#">Experience</a></li>
+            <li class="active"><a href="#">About</a></li>
           </ul><br>
-          <a href="http://twitter.com/cosmic_meow"><img src="img/twitter_c.png"></a>
+          <a href="http://twitter.com/cosmic_meow" target="_blank"><img src="img/twitter_c.png"></a>
 
         </div>
       </div>
@@ -123,18 +126,21 @@
       <div class="eight columns" style="background-color:#F1F1F2;padding:20px">
 
         <!-- Web -->
-        <div class="tab-content active">
+        <div class="tab-content">
+          <h4>Front End Experience</h4>
+          <p>Tools of trade included HTML, CSS, SCSS, LESS, and Javascript.</p>
+          <hr>
           <div class="row">
             <div class="six columns" style="border:1px #9E9786 solid;background-color:#fff">
               <center>
-                <a href="http://vinylmint.com"><img src="img/vinylmint_thumb.png"></a><br>
+                <a href="http://vinylmint.com" target="_blank"><img src="img/vinylmint_thumb.png"></a><br>
                 Intern<br>Vinylmint
               </center>
             </div>
 
             <div class="six columns" style="border:1px #9E9786 solid;background-color:#fff">
               <center>
-                <a href="http://cs.odu.edu/~acm"><img src="img/oduacm_thumb.png"></a><br>
+                <a href="http://cs.odu.edu/~acm" target="_blank"><img src="img/oduacm_thumb.png"></a><br>
                 Web Developer<br>Old Dominion University ACM
               </center>
             </div>
@@ -145,14 +151,14 @@
 
             <div class="six columns" style="border:1px #9E9786 solid;background-color:#fff">
               <center>
-                <a href="http://cosmicmeow.com/DEHack6"><img src="img/instacycle_thumb.png"></a><br>
+                <a href="http://cosmicmeow.com/DEHack6" target="_blank"><img src="img/instacycle_thumb.png"></a><br>
                 Front End <br>Team Meh @ <a href="http://www.dominionenterprises.com/company/dominion-enterprises-hackathon-6-success">DE Hackathon 2013</a>
               </center>
             </div>
 
             <div class="six columns" style="border:1px #9E9786 solid;background-color:#fff">
               <center>
-                <a href="http://cosmicmeow.com/codeboard"><img src="img/codeboard_thumb.png"></a><br>
+                <a href="http://cosmicmeow.com/codeboard" target="_blank"><img src="img/codeboard_thumb.png"></a><br>
                 Front End <br>Team Code Board @ <a href="http://www.y-hack.com/">Y-Hack 2013</a>
               </center>
             </div>
@@ -164,8 +170,14 @@
 
             <div class="six columns" style="border:1px #9E9786 solid;background-color:#fff">
               <center>
-                <a href="http://cosmicmeow.com/Archimedes"><img src="img/archimedes_thumb.png"></a><br>
+                <a href="http://cosmicmeow.com/Archimedes" target="_blank"><img src="img/archimedes_thumb.png"></a><br>
                 Front End <br>Team Archimedes @ <a href="http://www.mhacks.org/">M-Hacks 2014</a>
+              </center>
+            </div>
+            <div class="six columns" style="border:1px #9E9786 solid;background-color:#fff">
+              <center>
+                <a href="http://cs.odu.edu/~410red" target="_blank"><img src="img/corsica_thumb.png"></a><br>
+                Front End <br>Corsica @ <a href="http://www.mhacks.org/">ODU - CS410</a>
               </center>
             </div>
 
@@ -174,7 +186,9 @@
 
         <!-- Print -->
         <div class="tab-content">
-
+          <h4>Print</h4>
+          <p>Tools of trade included Adobe Photoshop, Adobe Illustrator, and Hexel. Included samples are flyers made for organizations such as the local <a href="">Code for America</a>, ODU's <a href="">ACM</a>, and ODU's Video Game Design and Development Club.</p>
+          <hr>
           <div class="row">
             <div class="six columns">
               <a href="img/hrtbusposter.png" class="fresco" data-fresco-group="prints"><img src="img/hrtbusposter_thumb.png"></a>
@@ -187,42 +201,175 @@
           <div class="row">
             <div class="six columns">
               <a href="img/acmposter.png" class="fresco" data-fresco-group="prints"><img src="img/acmposter_thumb.png"></a>
-           </div>
+            </div>
 
-           <div class="six columns">
-             <a href="img/oducfaposter.png" class="fresco" data-fresco-group="prints"><img src="img/oducfaposter_thumb.png"></a>
+            <div class="six columns">
+              <a href="img/oducfaposter.png" class="fresco" data-fresco-group="prints"><img src="img/oducfaposter_thumb.png"></a>
             </div>
           </div> <!-- /.row -->
+
+          <div class="row">
+            <div class="six columns">
+              <a href="img/ecgc_flyer.png" class="fresco" data-fresco-group="prints"><img src="img/ecgc_flyer_thumb.png"></a>
+            </div>
+
+
+          </div>
+
 
         </div>
 
         <!-- Illustration -->
         <div class="tab-content">
+          <h4>Illustration</h4>
+          <p>Tools of trade included Adobe Photoshop, Adobe Illustrator, and Hexel. Now and then I also dabble into traditional drawing such as ink on paper.</p>
+          <hr>
           <div class="row">
             <div class="six columns">
               <a href="img/letsparty.png" class="fresco" data-fresco-group="illustration"><img src="img/letsparty_thumb.png"></a>
            </div>
            <div class="six columns">
-             <a href="http://757rb.org"><img src="img/757rb_thumb.png"></a>
+             <a target="_blank" href="http://757rb.org"><img src="img/757rb_thumb.png"></a>
             </div>
           </div> <!-- /.row -->
+
+          <div class="row">
+            <div class="six columns">
+              <a target="_blank" href="http://www.norfolkjs.org/"><img src="img/norfolkjs_thumb.png"></a>
+           </div>
+           <div class="six columns">
+             <a target="_blank" href="https://play.google.com/store/apps/details?id=com.DWS.neighborhoodwatch"><img src="img/neighborhoodwatch_thumb.png"></a>
+            </div>
+          </div> <!-- /.row -->
+
+
+        </div>
+
+        <!-- Experience -->
+        <div class="tab-content">
+          <h4>Experience</h4>
+          <hr>
+          <h5><u>Work Experience</u></h5>
+          <a href="">Grow</a><i class="icon-right-open-mini"></i>Developer Intern <br>
+          <span class="grey">January 2014 – Present (4 months) | Norfolk, Virginia</span>
+          <br><br>
+
+          <a href="">Vinylmint</a><i class="icon-right-open-mini"></i>Developer Intern <br>
+          <span class="grey">June 2013 – December 2013 (7 months) | Norfolk, Virginia</span>
+          <br><br>
+
+          <a href="">Office of Compute and Communication Services</a><i class="icon-right-open-mini"></i>IT Consultant<br>
+          <span class="grey">January 2013 – June 2013 (6 months) | Old Dominion University, Norfolk, Virginia</span>
+          <br><br>
+
+          <a href="">Department of Urban Study and Public Administration</a><i class="icon-right-open-mini"></i>Office Assistant<br>
+          <span class="grey">September 2011 – December 2012 (1 year 4 months) | Old Dominion University, Norfolk, Virginia</span>
+
+          <br><hr><br>
+
+          <h5 style="display:inline"><u>Education</u></h5><i class="icon-right-open-mini"></i><span class="grey">Bachelor in Computer Science | Old Dominion University</span><br>
+          <div id="course_CS">
+            <i class="icon-right-dir"></i><a href="#" class="toggle" gumby-trigger="#cs_courses">Computer Science Courses</a>
+          </div>
+          <div class="drawer" id="cs_courses">
+            <p class="drawer_p">
+              CS110: Introduction to Computer Science<br>
+              CS120: Introducton to Information Literacy and Research<br>
+              CS150: Problem Solving and Programing I<br>
+              CS250: Problem Solving and Programing II<br>
+              CS252: Introduction to Unix for Programmers<br>
+              CS170: Introduction to Computer Architecture I<br>
+              CS270: Introduction to Computer Architecture II<br>
+              CS300: Computers in Society<br>
+              CS330: Object-Oriented Programming and Design<br>
+              CS350: Introduction to Software Engineering<br>
+              CS361: Advanced Data Structures and Algorithms<br>
+              CS381: Introduction to Discrete Structures<br>
+              CS410: Professional Workforce Development I<br>
+              CS411: Professional Workforce Development II<br>
+              CS418: Web Programming<br>
+              CS460: Computer Graphics<br>
+              CS471: Operating Systems<br>
+              CS495: Introduction to Web Science
+            </p>
+          </div>
+
+          <div id="course_general">
+            <i class="icon-right-dir"></i><a href="#" class="toggle" gumby-trigger="#gen_courses">General Education Courses</a>
+          </div>
+          <div class="drawer" id="gen_courses">
+            <p class="drawer_p">
+              ENGL110: English Composition I<br>
+              ENGL211: English Composition II<br>
+              ENGL112: Introduction to Literature<br>
+              COMM101: Public Speaking<br>
+              ARTS122: Visual Communication<br>
+              HIS111: History of World Civilizations I<br>
+              PHIL110: Introduction to Philosophy<br>
+              BIOL115: General Biology I<br>
+              BIOL116: General Biology II<br>
+              OEAS106: Introductory Oceanography I<br>
+              OEAS107: Introductory Oceanography II<br>
+              PSYC201: Introduction to Psychology<br>
+              IT325: Web Site and Web Page Design<br>
+              IT430: Object-Oriented Programming with Java
+            </p>
+          </div>
+
+          <div id="course_math">
+            <i class="icon-right-dir"></i><a href="#" class="toggle" gumby-trigger="#math_courses">Mathematical Courses</a>
+          </div>
+          <div class="drawer" id="math_courses">
+            <p class="drawer_p">
+              MATH211: Calculus I<br>
+              MATH212: Calculus II<br>
+              STAT330: Introduction to Probability and Statistics<br>
+              MATH316: Linear Algebra <i>(In Progress)</i>
+            </p>
+          </div>
+
+          <br><hr><br>
+
+          <h5><u>Awards</u></h5>
+          <b>Best In Show</b><i class="icon-right-open-mini"></i>Dominion Enterprise Universities Hackathon 2<br>
+          <span class="grey">February 2014 | Dominion Enterprise, Norfolk, Virginia</span>
+          <br><br>
+
+          <b>Best In Show</b><i class="icon-right-open-mini"></i>Dominion Enterprise Hackathon 6<br>
+          <span class="grey">October 2013 | Dominion Enterprise, Norfolk, Virginia</span>
+          <br><br>
+
+          <b>First Place Entry</b><i class="icon-right-open-mini"></i>Webb Center Promo Video Contest<br>
+          <span class="grey">October 2011 | Old Dominion University, Norfolk, Virginia</span>
+          <br><br>
+
+          <b>First Place</b><i class="icon-right-open-mini"></i>Senior Graphic Design<br>
+          <span class="grey">March 2010 | WHRO's Great Computer Challenge, Norfolk, Virginia</span>
+          <br><br>
         </div>
 
         <!-- About -->
-        <div class="tab-content">
-          <img src="img/meee.png"><br>
-          <p>Lookmai Rattana is a Computer Science undergraduate student at Old Dominion University. She interests in front-end development, 3-D Modeling, and pixel illustration (<a href="http://hexraystudios.com/hexels/">Hexel</a> is the BEST!!). She is currently interning at Vinylmint and web developing for Association for Computer Machinery over at ODU. <br><br>
+        <div class="tab-content active">
+          <h4>About Me</h4>
+          <hr>
+          <img src="img/profilepic.png" class=""><br>
+          <p>Lookmai Rattana is a Computer Science undergraduate student at Old Dominion University. She interests in front-end development, a little bit of 3-D Modeling, and pixel illustration. She is currently interning at <a href="http://thisisgrow.com" target="_blank">Grow</a> and web developing for Association for Computer Machinery over at ODU. <br><br>
           You can shoot her an email at <u>oratt001@gmail.com</u>. <br><br>
           <a href="http://twitter.com/cosmic_meow"><img src="img/twitter_c.png"></a> <a href="http://www.linkedin.com/pub/onapha-rattana/66/659/233"><img src="img/linkedin.png"></a> <a href="http://cosmicmeoww.tumblr.com/"><img src="img/tumblr.png"></a> <a href="http://github.com/cosmicmeow"><img src="img/github.png"></a>
           </p>
-        </div>
+
+          <hr>
+
 
       </div>
     </section>
   </div>
-  
+
+
+
+  <script src="js/banana.js"></script>
+
 
 
   </body>
 </html>
-
