@@ -6,6 +6,7 @@
         <div>Hello!</div>
         <div>I'm Lookmai!</div>
       </div>
+      <div class="bun"></div>
     </div>
     <div class="section-container services">
       <ul class="services-items"> 
@@ -104,14 +105,14 @@ body {
 
 .hero-banner {
   padding-top: 180px;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
   border-bottom: 1px solid #FFF6EA;
   background-color: #E9BBB9;
-  background: -moz-linear-gradient(top, rgba(131,146,179,0.56) 0%, rgba(189,178,195,0.68) 27%, rgba(189,178,195,0.68) 28%, rgba(233,187,185,1) 100%);
-  background: -webkit-linear-gradient(top, rgba(131,146,179,0.56) 0%,rgba(189,178,195,0.68) 27%,rgba(189,178,195,0.68) 28%,rgba(233,187,185,1) 100%);
-  background: linear-gradient(to bottom, rgba(131,146,179,0.56) 0%,rgba(189,178,195,0.68) 27%,rgba(189,178,195,0.68) 28%,rgba(233,187,185,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f8392b3', endColorstr='#e9bbb9',GradientType=0 );
+  background-image: url('/src/assets/bun_bg.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
   .hello {
     border: 1px solid #FFF6EA;
     width: 300px;
@@ -122,6 +123,14 @@ body {
     justify-content: center;
     font-family: 'Jua', Helvetica, Arial, sans-serif;
     line-height: 42px;
+  }
+  .bun {
+    width: 400px;
+    height: 353px;
+    background-image: url('/src/assets/bun_bun.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+     transform: translateY(30px);
   }
 }
 
