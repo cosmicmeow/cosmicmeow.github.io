@@ -60,7 +60,6 @@ export default {
         right: 0;
         bottom: 0;
         left: 0;
-        transform: translateZ(-1px) scale(2);
         background-size: 100%;
         z-index: -1;
         background-repeat: no-repeat;
@@ -77,12 +76,14 @@ export default {
   }
   #landing-middle {
     &.parallax-container::after {
+      transform: translateZ(-1px) scale(2);
       background-position: bottom center; 
       background-image: url('/src/assets/img/landing_assets/bun_clouds2.png');
     }
   }
   #landing-back {
     &.parallax-container::after {
+      transform: translateZ(-2px) scale(4);
       background-attachment: fixed;
       background-position: center; 
       background-image: url('/src/assets/img/landing_assets/bun_clouds1.png');
@@ -92,8 +93,8 @@ export default {
 
 .hello {
   margin-top: 150px;
-  width: 400px;
-  height: 200px;
+  width: 500px;
+  height: 240px;
   background-image: url('/src/assets/img/landing_assets/bun_greetings.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -114,7 +115,7 @@ export default {
   bottom: 0;
   right: 0;
   background-image: url('/src/assets/img/landing_assets/bun_stars.png');
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: contain;
   background-position: center;
 }
@@ -123,6 +124,7 @@ export default {
 @media only screen  and (max-width: 399px) {
   .hello {
     margin-top: 120px;
+    width: 90%;
   }
   .hero-banner {
     height: 600px;
@@ -132,6 +134,7 @@ export default {
 @media only screen  and (min-width: 400px) and (max-width : 599px) {
   .hello {
     margin-top: 120px;
+    width: 90%;
   }
   .hero-banner {
     height: 700px;
