@@ -1,27 +1,8 @@
 <template>
   <div id="app">
     <navbar />
-    <div class="section-container hero-banner">
-      <div class="hello">
-        <div>Hello!</div>
-        <div>I'm Lookmai!</div>
-      </div>
-      <div class="bun"></div>
-    </div>
-    <div class="section-container services">
-      <ul class="services-items"> 
-        <li class="services-item">
-          <div class="services-image"></div>
-          <div class="services-copy">I code!</div>
-          <div class="services-subcopy">I currently code full time.<br>Not available for coding job atm.</div>
-        </li>
-        <li class="services-item">
-          <div class="services-image"></div>
-          <div class="services-copy">I also draw!</div>
-          <div class="services-subcopy">Commission available!<br><a href="mailto:cosmicmeow.works@gmail.com" target="_blank">Get in touch!</a></div>
-        </li>
-      </ul>
-    </div>
+    <landing />
+    <services />
     <web />
     <illustration />
     <about />
@@ -31,6 +12,8 @@
 <script>
 
 import Navbar from './components/navbar';
+import Landing from './components/landing';
+import Services from './components/services';
 import Web from './components/web';
 import Illustration from './components/illustration';
 import About from './components/about';
@@ -39,6 +22,8 @@ export default {
   name: 'home',
   components: {
     Navbar,
+    Landing,
+    Services,
     Web,
     Illustration,
     About
@@ -103,101 +88,6 @@ body {
   flex-direction: row;
 }
 
-.hero-banner {
-  padding-top: 180px;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-  border-bottom: 1px solid #FFF6EA;
-  background-color: #E9BBB9;
-  background-image: url('/src/assets/bun_bg.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  .hello {
-    border: 1px solid #FFF6EA;
-    width: 300px;
-    height: 150px;
-    font-size: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Jua', Helvetica, Arial, sans-serif;
-    line-height: 42px;
-  }
-  .bun {
-    width: 400px;
-    height: 353px;
-    background-image: url('/src/assets/bun_bun.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-     transform: translateY(30px);
-  }
-}
-
-.services {
-  min-height: 400px;
-  color: #8392B3;
-  border-bottom: 10px solid #fdeddd;
-  .services-items {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .services-item {
-    margin: 0 30px;
-  }
-  .services-image {
-    width: 250px;
-    height: 250px;
-    background-color: #BBB2C2;
-    border: 1px solid #FCF0DA;
-    border-radius: 50%;
-    position: relative;
-    margin: auto;
-    &::after {
-      content: "";
-      width: 236px;
-      height: 236px;
-      position: absolute;
-      top: 5px;
-      left: 5px;
-      border: 1px dotted #FFF6EA;
-      border-radius: 50%;
-    }
-  }
-  .services-copy {
-    margin-top: 30px;
-    font-size: 20px;
-    font-family: 'Jua', Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  .services-subcopy {
-    color: #BBB2C2;
-    a {
-      color: #BBB2C2;
-      text-decoration: none;
-      position: relative;
-      &::after {
-        position: absolute;
-        left: 0;
-        bottom: -3px;
-        content: "";
-        height: 0px;
-        margin-top: 5px;
-        width: 100%;
-        border-bottom: 1px dotted #BBB2C2;
-      }
-      &:hover {
-        color: #8392B3;
-        &:after {
-          border-color: #8392B3;
-        }
-      }
-    }
-  }
-}
-
 h1, h2 {
   font-weight: normal;
 }
@@ -233,6 +123,9 @@ a {
 @media only screen  and (min-width: 500px) and (max-width : 699px) {
   .page-container {
     max-width: 450px;
+  }
+  .hero-banner {
+    height: 750px;
   }
 }
 
