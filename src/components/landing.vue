@@ -5,7 +5,7 @@
       <div id="landing-middle" class="landing-container parallax-container">
         </div>
       <div id="landing-front" class="landing-container">
-        <div class="stars"></div>
+        <div class="clouds"></div>
         <div class="hello"></div>
         <div class="bun"></div>
     </div>
@@ -76,16 +76,18 @@ export default {
   }
   #landing-middle {
     &.parallax-container::after {
-      transform: translateZ(-1px) scale(2);
-      background-position: bottom center; 
-      background-image: url('/src/assets/img/landing_assets/bun_clouds2.png');
+      transform: translateZ(-1px) scale(2.2);
+      background-position: center; 
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-image: url('/src/assets/img/landing_assets/bun_stars.png');
     }
   }
   #landing-back {
     &.parallax-container::after {
-      transform: translateZ(-2px) scale(4);
+      transform: translateZ(-2px) scale(3.8);
       background-attachment: fixed;
-      background-position: center; 
+      background-position: center 130px; 
       background-image: url('/src/assets/img/landing_assets/bun_clouds1.png');
     }
   }
@@ -108,16 +110,17 @@ export default {
   background-size: contain;
   background-position: center;
 }
-.stars {
+.clouds {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: url('/src/assets/img/landing_assets/bun_stars.png');
-  background-repeat: repeat;
+  background-image: url('/src/assets/img/landing_assets/bun_clouds2.png');
+  background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: bottom;
+  z-index: -1;
 }
 
 

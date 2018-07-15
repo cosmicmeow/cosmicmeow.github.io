@@ -1,7 +1,7 @@
 <template>
   <div id="illustration-works" class="section-container">
     <div class="page-container">
-      <section-header v-bind:title="title" v-bind:subtitle="subtitle"/>
+      <section-header v-bind:title="title" v-bind:subtitle="subtitle" v-bind:icon="icon"/>
       <div class="section-items">
         <item v-for="item in items" v-bind:key="item.key" v-bind:item="item" />
       </div>
@@ -23,6 +23,7 @@ export default {
   },
   data () {
     return {
+      icon: 'bun_illustration.png',
       title: "Illustration Works",
       subtitle: "I'm also an illustrator! I am available for logo  and character designs, illustration, and conference slides creation.",
       items: illustrationItems.items,

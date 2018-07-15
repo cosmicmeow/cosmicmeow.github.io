@@ -74,7 +74,7 @@ body {
 
 #web-works, #illustration-works {
   .page-container {
-    padding-bottom: 60px;
+    padding-bottom: 90px;
     border-bottom: 1px dotted #FFF6EA;
   }
 }
@@ -82,7 +82,7 @@ body {
 .section-container {
   width: 100vw;
   min-height: 100vh;
-  padding: 30px;
+  padding: 30px 0;
   display: flex;
   flex: 1;
   flex-direction: row;
@@ -116,13 +116,13 @@ a {
 
 @media only screen  and (min-width: 400px) and (max-width : 599px) {
   .page-container {
-    max-width: 350px;
+    max-width: 370px;
   }
 }
 
 @media only screen  and (min-width: 500px) and (max-width : 699px) {
   .page-container {
-    max-width: 450px;
+    max-width: 470px;
   }
   .hero-banner {
     height: 750px;
@@ -131,13 +131,13 @@ a {
 
 @media only screen  and (min-width: 700px) and (max-width : 799px) {
   .page-container {
-    max-width: 650px;
+    max-width: 670px;
   }
 }
 
 @media only screen  and (min-width: 800px) and (max-width : 999px) {
   .page-container {
-    max-width: 750px;
+    max-width: 770px;
   }
 }
 

@@ -1,7 +1,7 @@
 <template>
   <div id="web-works" class="section-container">
     <div class="page-container">
-      <section-header v-bind:title="title" v-bind:subtitle="subtitle" />
+      <section-header v-bind:title="title" v-bind:subtitle="subtitle" v-bind:icon="icon" />
       <div class="section-items">
         <item v-for="item in items" v-bind:key="item.key" v-bind:item="item" />
       </div>
@@ -23,8 +23,9 @@ export default {
   },
   data () {
     return {
+      icon: 'bun_web.png',
       title: "Front End Experience",
-      subtitle: "I'm a frontend developer, experienced in modern JS frameworks like React and Vue. Here are some of my favorite works that I've created over the years!",
+      subtitle: "I'm a frontend developer with experiences in modern JS frameworks like React and Vue. Here are some of my favorite works that I've created over the years!",
       items: webItems.items,
     }
   }

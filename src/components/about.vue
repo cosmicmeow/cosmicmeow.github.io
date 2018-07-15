@@ -1,7 +1,7 @@
 <template>
   <div id="about" class="section-container">
     <div class="page-container">
-      <section-header v-bind:title="title"/>
+      <section-header v-bind:title="title" v-bind:icon="icon"/>
     </div>
   </div>
 </template>
@@ -16,6 +16,7 @@ export default {
   },
   data () {
     return {
+      icon: 'bun_about.png',
       title: "About Lookmai",
       subtitle: ""
     }
