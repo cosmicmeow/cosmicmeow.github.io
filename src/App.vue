@@ -53,6 +53,9 @@ export default {
 body {
   margin: 0;
   background-color: #FFF6EA;
+  width: 100vw;
+  max-width:100%;  /* added */
+  overflow-x: hidden;
   * {
     box-sizing: border-box;
   }

@@ -1,12 +1,12 @@
 <template>
   <div class="section-container services">
     <ul class="services-items"> 
-      <li class="services-item">
+      <li id="services-web" class="services-item">
         <div class="services-image"></div>
         <div class="services-copy">I code!</div>
         <div class="services-subcopy">I currently code full time.<br>Not available for coding job atm.</div>
       </li>
-      <li class="services-item">
+      <li id="services-illustration" class="services-item">
         <div class="services-image"></div>
         <div class="services-copy">I also draw!</div>
         <div class="services-subcopy">Commission available!<br><a href="mailto:cosmicmeow.works@gmail.com" target="_blank">Get in touch!</a></div>
@@ -42,6 +42,19 @@ export default {
   }
   .services-item {
     margin:  30px;
+    &#services-web {
+      .services-image {
+        background-size: 50%;
+        background-image: url('/src/assets/img/header_assets/bun_web.gif');
+      }
+    }
+
+    &#services-illustration {
+      .services-image {
+        background-size: 60%;
+        background-image: url('/src/assets/img/header_assets/bun_illustration.gif');
+      }
+    }
   }
   .services-image {
     width: 250px;
@@ -51,6 +64,8 @@ export default {
     border-radius: 50%;
     position: relative;
     margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
     &::after {
       content: "";
       width: 236px;

@@ -48,11 +48,10 @@ export default {
     left: 0;
     width: 100%;
     height: inherit;
-
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: hidden;
     perspective: 1px;
     &.parallax-container {
+      box-sizing: content-box; 
       &::after {
         content: " ";
         position: absolute;
