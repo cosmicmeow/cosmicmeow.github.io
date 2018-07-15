@@ -36,5 +36,16 @@ export default {
   height: 250px;
   margin: 15px;
   padding: 15px;
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    background-image: url('/src/assets/img/header_assets/item_border_pattern.png');
+    background-repeat: repeat;
+  }
 }
 </style>
