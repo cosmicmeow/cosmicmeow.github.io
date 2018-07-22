@@ -33,8 +33,8 @@ export default {
   border-bottom: 5px solid #fdeddd;
   z-index: 1;
   .navbar-homebutton {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    min-width: 60px;
     background-size: contain;
     border-radius: 35px;
     background-image: url('/src/assets/img/landing_assets/bun_tiny.png');

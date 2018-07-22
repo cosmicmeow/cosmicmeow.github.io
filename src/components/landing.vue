@@ -40,7 +40,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-    height: 100vh;
+  height: 100vh;
 
   .landing-container{
     position: absolute;
@@ -102,12 +102,12 @@ export default {
   background-position: center;
 }
 .bun {
-  width: 450px;
-  height: 440px;
+  width: 500px;
+  height: 500px;
   background-image: url('/src/assets/img/landing_assets/bun_bun.png');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: center 24px;
 }
 .clouds {
   position: absolute;

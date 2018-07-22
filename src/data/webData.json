@@ -3,9 +3,9 @@
     "key": "w-1",
     "image": "web_shopping",
     "title": "Shopping Insights Beta",
-    "subtitle": "Google tasked us to created a site to visualize their shopping data that reflect trends during selected periods of time on a US map. My responsibilities included styling the UI, ",
+    "subtitle": "A website to visualize Google's shopping data that reflect trends during selected periods of time on a US map. My major responsibilities included styling and animating the UIs, cross-browsers/devices development, and generating visuals with 3D.js",
     "clients": "Google, Grow",
-    "tools": "React JS, SCSS, Node",
+    "tools": "React JS, 3D.js, SCSS, Node",
     "url": "https://thisisgrow.com/work/shopping-insights"
   },{
     "key": "w-2",
