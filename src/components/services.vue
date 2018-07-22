@@ -11,6 +11,11 @@
         <div class="services-copy">I also draw!</div>
         <div class="services-subcopy">Commission available!<br><a href="mailto:cosmicmeow.works@gmail.com" target="_blank">Get in touch!</a></div>
       </li>
+      <!-- <li id="services-video" class="services-item">
+        <div class="services-image"></div>
+        <div class="services-copy">I edit videos too!</div>
+        <div class="services-subcopy">Editor for<br><a href="https://www.youtube.com/channel/UCI_0jmOfYiD4Nh7zxEqXATQ/" target="_blank">One Sky One Destiny Podcast</a></div>
+      </li> -->
     </ul>
   </div>
 </template>

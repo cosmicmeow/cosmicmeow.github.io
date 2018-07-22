@@ -11,12 +11,13 @@
 
 <script>
 
+import Vue from 'vue';
+
 import SectionHeader from './sectionHeader';
 import Item from './item';
 import webItems from '../data/webData.json';
 
-export default {
-  name: 'web',
+export default Vue.component('web' ,{
   components: {
     SectionHeader,
     Item,
@@ -29,7 +30,7 @@ export default {
       items: webItems.items,
     }
   }
-}
+});
 </script>
 
 <style lang="scss">

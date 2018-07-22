@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
     <div class="navbar-container page-container">
-      <div>Home</div>
+      <div class="navbar-homebutton"></div>
       <ul>
         <li>Web</li>
         <li>Illustration</li>
@@ -32,6 +32,13 @@ export default {
   color: #8392B3;
   border-bottom: 5px solid #fdeddd;
   z-index: 1;
+  .navbar-homebutton {
+    height: 70px;
+    width: 70px;
+    background-size: contain;
+    border-radius: 35px;
+    background-image: url('/src/assets/img/landing_assets/bun_tiny.png');
+  }
   .navbar-container {
     display: flex;
     flex: 1;
