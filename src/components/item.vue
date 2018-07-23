@@ -146,7 +146,7 @@ export default Vue.component('item', {
       margin-bottom: 16px;
       color: #8392B3;
       position: relative;
-      padding-right: 20px;
+      padding-right: 22px;
       // &:before {
       //   content: "";
       //   position: absolute;
