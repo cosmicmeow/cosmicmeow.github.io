@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.scss';
 
 class App extends React.Component {
+
+  LandingSection = () => {
+    return (<div id="landing" class="section-container hero-banner">
+    <div id="landing-back" class="landing-container parallax-container">
+      </div>
+    <div id="landing-middle" class="landing-container parallax-container">
+      </div>
+    <div id="landing-front" class="landing-container">
+      <div class="clouds"></div>
+      <div class="hello"></div>
+      <div class="bun"></div>
+  </div>
+    
+  </div>)
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="app-root">
+        <this.LandingSection/>
       </div>
     );
   }
