@@ -1,22 +1,197 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.hero-banner {
+  min-height: 0;
+  display: block;
+  padding: 0;
+  justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-bottom: 1px solid #FFF6EA;
+  background-color: #E9BBB9;
+  background-image: url('./assets/landing_assets/bun_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+
+  .landing-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+    perspective: 1px;
+    &.parallax-container {
+      box-sizing: content-box; 
+      &::after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-size: 100%;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+  #landing-front {
+    transform: translateZ(0);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #landing-middle {
+    &.parallax-container::after {
+      transform: translateZ(-1px) scale(2.2);
+      background-position: center; 
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-image: url('./assets/landing_assets/bun_stars.png');
+    }
+  }
+  #landing-back {
+    &.parallax-container::after {
+      transform: translateZ(-2px) scale(3.8);
+      background-attachment: fixed;
+      background-position: center 130px; 
+      background-image: url('./assets/landing_assets/bun_clouds1.png');
+    }
+  }
 }
 
-.App-link {
-  color: #09d3ac;
+.hello {
+  margin-top: 150px;
+  width: 500px;
+  height: 240px;
+  background-image: url('./assets/landing_assets/bun_greetings.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.bun {
+  width: 500px;
+  height: 500px;
+  background-image: url('./assets/landing_assets/bun_bun.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 24px;
+}
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url('./assets/landing_assets/bun_clouds2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  z-index: -1;
+}
+
+
+@media only screen  and (max-width: 399px) {
+  .hello {
+    margin-top: 120px;
+    width: 90%;
+  }
+  .hero-banner {
+    height: 600px;
+  }
+}
+
+@media only screen  and (min-width: 400px) and (max-width : 599px) {
+  .hello {
+    margin-top: 120px;
+    width: 90%;
+  }
+  .hero-banner {
+    height: 700px;
+  }
+}
+
+
+.services {
+  background-color: #FBF0DE;
+  min-height: 400px;
+  color: #8392B3;
+  border-bottom: 10px solid #F7D3C0;
+  .services-items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .services-item {
+    margin:  30px;
+    &#services-web {
+      .services-image {
+        background-size: 50%;
+        background-image: url('./assets/header_assets/bun_web.gif');
+      }
+    }
+
+    &#services-illustration {
+      .services-image {
+        background-size: 60%;
+        background-image: url('./assets/header_assets/bun_illustration.gif');
+      }
+    }
+  }
+  .services-image {
+    width: 250px;
+    height: 250px;
+    background-color: #BBB2C2;
+    border: 1px solid #FCF0DA;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    &::after {
+      content: "";
+      width: 236px;
+      height: 236px;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      border: 1px dotted #FFF6EA;
+      border-radius: 50%;
+    }
+  }
+  .services-copy {
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: 'Jua', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .services-subcopy {
+    color: #BBB2C2;
+    a {
+      color: #BBB2C2;
+      text-decoration: none;
+      position: relative;
+      &::after {
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        content: "";
+        height: 0px;
+        margin-top: 5px;
+        width: 100%;
+        border-bottom: 1px dotted #BBB2C2;
+      }
+      &:hover {
+        color: #8392B3;
+        &:after {
+          border-color: #8392B3;
+        }
+      }
+    }
+  }
 }
