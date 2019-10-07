@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import webItems from './data/webData';
+import WebWorks from './WebWorks';
 
 interface WorkItemType {
 	key: string;
@@ -68,58 +68,12 @@ class App extends React.Component {
 		);
 	};
 
-	SectionHeader = ({ item }: { item: HeaderItemType }) => {
-		const url = require(`./assets/header_assets/${item.icon}`);
-		const iconObj = { backgroundImage: `url(${url})` };
-
-		return (
-			<div className='section-header'>
-				<div className='header-icon' style={iconObj}></div>
-				<div className='header-title'>{item.title}</div>
-				<div className='header-subtitle'>{item.subtitle}</div>
-			</div>
-		);
-	};
-
-	WebWorksSection = () => {
-		const item = {
-			icon: 'bun_web.png',
-			title: 'Front End Experience',
-			subtitle:
-				"I'm a frontend developer with experiences in modern JS frameworks like React and Vue. Here are some of my favorite works that I've created over the years.",
-		};
-
-		return (
-			<div id='web-works' className='section-container'>
-				<div className='page-container'>
-					<this.SectionHeader item={item} />
-					<div className='section-items'>
-						{webItems.items.map(el => {
-							return <this.WorkItem key={el.key} item={el} />;
-						})}
-					</div>
-				</div>
-			</div>
-		);
-	};
-
-	WorkItem = ({ item }: { item: WorkItemType }) => {
-		const url = require(`./assets/work_assets/${item.image}_thumbnail.jpg`);
-		const imageStyle = { backgroundImage: `url(${url})` };
-		return (
-			<div className='item-container'>
-				<div className='item-image' style={imageStyle}></div>
-				<a href={item.url} />
-			</div>
-		);
-	};
-
 	render() {
 		return (
 			<div className='app-root'>
 				<this.LandingSection />
 				<this.ServicesSection />
-				<this.WebWorksSection />
+				<WebWorks />
 			</div>
 		);
 	}
