@@ -42,3 +42,6 @@ dwsync.xml
 .svn
 .CVS
 .idea
+
+
+node_modules/
