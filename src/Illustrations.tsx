@@ -20,11 +20,21 @@ class Illustrations extends React.Component {
 						key={key}
 						className='sticker-has-link'
 						href={item.url}
-						target='_blank'>
-						<img className='sticker-image' src={url} />
+						target='_blank'
+						rel='noopener noreferrer'>
+						<img
+							className='sticker-image'
+							src={url}
+							alt={`I saved this file as ${item.name} dot png`}
+						/>
 					</a>
 				) : (
-					<img key={key} className='sticker-image' src={url} />
+					<img
+						key={key}
+						className='sticker-image'
+						src={url}
+						alt={`I saved this file as ${item.name} dot png`}
+					/>
 				)}
 			</div>
 		);

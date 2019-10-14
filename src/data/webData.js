@@ -28,7 +28,7 @@ const webItems = {
 				'This project was created to promote and display the tour information for Rick and Morty\'s cross-country "Rick Mobile" (basically a giant Rick in a form or a truck) promotional tour. The project utilized Google Map API to display the corresponding position of the mobile and a twitter feed that displayed posts relating to the tour.',
 			clients: 'Adult Swim, Grow',
 			tools: 'Vue JS, SCSS, Webpack',
-			url: 'https://thisisgrow.com/work/shopping-insights',
+			url: 'https://www.adultswim.com/rickmobile/',
 		},
 		{
 			key: 'w-4',

@@ -5,6 +5,9 @@ import Illustration from './Illustrations';
 import SectionHeader from './SectionHeader';
 
 class App extends React.Component {
+	public emailurl =
+		'mailto:cosmicmeow.works@gmail.com?&subject=Hello%20There!&body=Your-inquiry-goes-here!';
+
 	LandingSection = () => {
 		return (
 			<div id='landing' className='section-container hero-banner'>
@@ -43,8 +46,9 @@ class App extends React.Component {
 							Commission available!
 							<br />
 							<a
-								href='mailto:cosmicmeow.works@gmail.com'
-								target='_blank'>
+								href={this.emailurl}
+								target='_blank'
+								rel='noopener noreferrer'>
 								Get in touch!
 							</a>
 						</div>
@@ -74,8 +78,6 @@ class App extends React.Component {
 				'Lookmai is a freelance frontend developer and illustrator. She finished CS bachelor at Old Dominion University and is currently working at Anthem.',
 		};
 
-		const emailurl =
-			'mailto:cosmicmeow.works@gmail.com?&subject=Hello%20There!&body=Your-inquiry-goes-here!';
 		return (
 			<div id='about' className='section-container'>
 				<div className='page-container'>
@@ -85,38 +87,53 @@ class App extends React.Component {
 						and full time frontend development opportunity!
 						<a
 							className='inline-email-link'
-							href={emailurl}
-							target='_blank'>
+							href={this.emailurl}
+							target='_blank'
+							rel='noopener noreferrer'>
 							Get in touch!
 						</a>
 					</h4>
 					<a
 						href='https://www.linkedin.com/in/lookmai-rattana-23365966/'
-						target='_blank'>
+						target='_blank'
+						rel='noopener noreferrer'>
 						<img
 							className='lookmai-image'
-							src={require('./assets/landing_assets/lookmai.png')}></img>
+							src={require('./assets/landing_assets/lookmai.png')}
+							alt='this goes to my LinkedIn profile!'
+						/>
 					</a>
 					<div className='social-links-container'>
 						<a
 							href='https://twitter.com/cosmicmeoww'
-							target='_blank'>
+							target='_blank'
+							rel='noopener noreferrer'>
 							<img
 								className='social-link'
-								src={require('./assets/landing_assets/icon_twitter.png')}></img>
+								src={require('./assets/landing_assets/icon_twitter.png')}
+								alt='click to open my twitter page!'
+							/>
 						</a>
 						<a
 							href='https://instagram.com/cosmicmeowdraws'
-							target='_blank'>
+							target='_blank'
+							rel='noopener noreferrer'>
 							<img
 								className='social-link'
-								src={require('./assets/landing_assets/icon_instagram.png')}></img>
+								src={require('./assets/landing_assets/icon_instagram.png')}
+								alt='click to open my instagram page!'
+							/>
 						</a>
 
-						<a href={emailurl} target='_blank'>
+						<a
+							href={this.emailurl}
+							target='_blank'
+							rel='noopener noreferrer'>
 							<img
 								className='social-link'
-								src={require('./assets/landing_assets/icon_email.png')}></img>
+								src={require('./assets/landing_assets/icon_email.png')}
+								alt='contact me via email!'
+							/>
 						</a>
 					</div>
 				</div>

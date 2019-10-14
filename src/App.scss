@@ -140,24 +140,34 @@ $pink: #e9bbb9;
 
 @media only screen and (max-width: 399px) {
 	.hello {
-		margin-top: 120px;
+		margin-top: 80px;
 		width: 90%;
-	}
-	.hero-banner {
-		height: 600px;
 	}
 }
 
 @media only screen and (min-width: 400px) and (max-width: 599px) {
 	.hello {
-		margin-top: 120px;
+		margin-top: 90px;
 		width: 90%;
-	}
-	.hero-banner {
-		height: 700px;
 	}
 }
 
+@media only screen and (max-width: 500px) {
+	.hero-banner {
+		background-attachment: scroll;
+		background-size: auto;
+	}
+	#landing-middle {
+		&.parallax-container::after {
+			background-attachment: scroll;
+		}
+	}
+	#landing-back {
+		&.parallax-container::after {
+			background-attachment: scroll;
+		}
+	}
+}
 .services {
 	background-color: #fbf0de;
 	min-height: 400px;
@@ -234,6 +244,20 @@ $pink: #e9bbb9;
 				&:after {
 					border-color: #8392b3;
 				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 499px) {
+	.services {
+		.services-image {
+			width: 150px;
+			height: 150px;
+			&::after {
+				content: '';
+				width: 136px;
+				height: 136px;
 			}
 		}
 	}
@@ -414,6 +438,7 @@ $pink: #e9bbb9;
 		opacity: 0.5;
 	}
 }
+
 .sticker-image {
 	width: 200px;
 	height: 200px;
@@ -422,22 +447,28 @@ $pink: #e9bbb9;
 
 @media only screen and (max-width: 499px) {
 	.item-container {
-		min-height: 320px;
+		min-height: 250px;
 		.item-image {
-			height: 260px;
+			height: 200px;
 			background-size: cover;
 			background-position: center;
 		}
 		.item-details {
-			transform: translateY(260px);
+			min-height: 400px;
+			transform: translateY(190px);
 			.item-name {
 				padding: 15px;
-				padding-bottom: 10px;
+				padding-bottom: 20px;
+				font-size: 1.3em;
 			}
 			.item-details-inner {
 				padding: 15px;
 				padding-top: 0;
 			}
+		}
+
+		&.active {
+			min-height: 400px;
 		}
 	}
 	.sticker-container,
@@ -586,6 +617,7 @@ $pink: #e9bbb9;
 	flex-direction: row;
 	justify-content: center;
 }
+
 .social-link {
 	margin: 10px;
 	width: 30px;
@@ -595,6 +627,7 @@ $pink: #e9bbb9;
 		transform: translateY(-2px);
 	}
 }
+
 .section-header {
 	width: 100%;
 	padding: 20px;
@@ -602,7 +635,7 @@ $pink: #e9bbb9;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	text-align: left;
+	text-align: center;
 	.header-icon {
 		width: 90px;
 		height: 60px;
@@ -617,6 +650,7 @@ $pink: #e9bbb9;
 		padding-bottom: 15px;
 		font-family: 'Jua', Helvetica, Arial, sans-serif;
 		font-size: 24px;
+		margin: auto;
 	}
 	.header-subtitle {
 		font-size: 17px;
